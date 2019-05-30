@@ -12,10 +12,9 @@ class ViewController: UIViewController {
     let workout = 0 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+      
     }
 
-//Wassup guys it's mattysmokes here
-    //jaydan is toxicc
+
 }
 

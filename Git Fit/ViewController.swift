@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
       
         func test() {
-            print("howdy partner")
+            print("howdy partner!")
         }
         
     }

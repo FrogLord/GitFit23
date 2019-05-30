@@ -9,7 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let workout = 0 
+    
+    
+    @IBOutlet weak var button1: UIButton!
+    
+    
+    @IBOutlet weak var button5: UIButton!
+    @IBOutlet weak var createWorkoutButton: UIButton!
+    @IBOutlet weak var strengthButton: UIButton!
+    @IBOutlet weak var enduranceButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
       

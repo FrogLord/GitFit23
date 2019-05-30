@@ -10,10 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
+    //IBOutlets
     @IBOutlet weak var button1: UIButton!
-    
-    
+    //button 2
+    //button 3
+    //button 4
     @IBOutlet weak var button5: UIButton!
     @IBOutlet weak var createWorkoutButton: UIButton!
     @IBOutlet weak var strengthButton: UIButton!

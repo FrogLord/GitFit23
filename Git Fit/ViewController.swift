@@ -13,7 +13,14 @@ class ViewController: UIViewController {
     var strength = false
     var endurance = false
     var average = true
+    
     var picker1 = ["Upper Body", "Legs", "Core", "Arms", "Cardio"]
+    
+    var upperBody = ["shoulder press"]
+    var legs = ["squats"]
+    var core = ["plank"]
+    var arms = ["dumbell curls"]
+    var cardio = ["burpies"]
     //IBOutlets
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!

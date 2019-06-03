@@ -9,7 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+    var workoutButton : Int = 0
+    var strength = false
+    var endurance = false
+    var average = true
     //IBOutlets
     @IBOutlet weak var button1: UIButton!
     //button 2
@@ -20,13 +23,30 @@ class ViewController: UIViewController {
     @IBOutlet weak var strengthButton: UIButton!
     @IBOutlet weak var enduranceButton: UIButton!
     
+    @IBAction func strengthCreate(_ sender: UIButton) {
+        if sender.tag == 7 {
+            endurance = false
+            strength = true
+            average = false
+        }
+        else {
+            endurance = false
+            strength = false
+            average = true
+        }
+    }
+    
+    @IBAction func enduranceCreate() {
+        
+    }
+    
+    @IBAction func createRecipe() {
+        
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-        func test() {
-            print("howdy partner!")
-        }
         
     }
 

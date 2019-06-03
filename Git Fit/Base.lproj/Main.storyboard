@@ -37,13 +37,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z62-L6-hne">
-                                <rect key="frame" x="81" y="211" width="212" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.27732234010000001" green="1" blue="0.21535998619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Upper Body"/>
-                            </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rj-w0-wJm">
-                                <rect key="frame" x="81" y="394" width="212" height="34"/>
+                                <rect key="frame" x="81" y="200" width="212" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.27732234010000001" green="1" blue="0.21535998619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Upper Body"/>
@@ -76,6 +70,30 @@
                                     <segue destination="jPu-cb-hSU" kind="show" id="B24-3f-QtB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gm2-Kz-c9t">
+                                <rect key="frame" x="81" y="350" width="212" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.27732234010000001" green="1" blue="0.21535998619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Upper Body"/>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9O-H5-dVv">
+                                <rect key="frame" x="81" y="300" width="212" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.27732234010000001" green="1" blue="0.21535998619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Upper Body"/>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6P-Sy-Fz0">
+                                <rect key="frame" x="81" y="250" width="212" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.27732234010000001" green="1" blue="0.21535998619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Upper Body"/>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rj-w0-wJm">
+                                <rect key="frame" x="81" y="400" width="212" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.27732234010000001" green="1" blue="0.21535998619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Upper Body"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.43795957063120833" green="0.91757631619013669" blue="0.98860508419689119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <rect key="contentStretch" x="0.45000000000000001" y="0.0" width="1" height="1"/>
@@ -83,6 +101,9 @@
                     </view>
                     <connections>
                         <outlet property="button1" destination="Z62-L6-hne" id="KVx-NI-Akt"/>
+                        <outlet property="button2" destination="f6P-Sy-Fz0" id="MH0-aH-MZp"/>
+                        <outlet property="button3" destination="p9O-H5-dVv" id="XfA-Nt-hKe"/>
+                        <outlet property="button4" destination="gm2-Kz-c9t" id="mYT-4D-LuX"/>
                         <outlet property="button5" destination="6rj-w0-wJm" id="V0O-qE-RCr"/>
                         <outlet property="createWorkoutButton" destination="GHc-Xu-9us" id="1KW-hg-PRU"/>
                         <outlet property="enduranceButton" destination="mTP-cv-4r0" id="G5c-rx-5gN"/>
@@ -231,6 +252,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Tg8-gg-Bgc"/>
+        <segue reference="B24-3f-QtB"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -41,6 +41,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.27732234010000001" green="1" blue="0.21535998619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Upper Body"/>
+                                <connections>
+                                    <action selector="selector" destination="BYZ-38-t0r" eventType="touchUpInside" id="2zK-Sx-aL9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rj-w0-wJm">
+                                <rect key="frame" x="81" y="400" width="212" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.27732234010000001" green="1" blue="0.21535998619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Upper Body"/>
+                                <connections>
+                                    <action selector="selector" destination="BYZ-38-t0r" eventType="touchUpInside" id="odG-gO-vQa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAp-XQ-YFK">
                                 <rect key="frame" x="16" y="543" width="150" height="73"/>
@@ -75,25 +87,32 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.27732234010000001" green="1" blue="0.21535998619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Upper Body"/>
+                                <connections>
+                                    <action selector="selector" destination="BYZ-38-t0r" eventType="touchUpInside" id="8dC-Oe-w6G"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9O-H5-dVv">
                                 <rect key="frame" x="81" y="300" width="212" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.27732234010000001" green="1" blue="0.21535998619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Upper Body"/>
+                                <connections>
+                                    <action selector="selector" destination="BYZ-38-t0r" eventType="touchUpInside" id="4jB-LL-WnS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6P-Sy-Fz0">
                                 <rect key="frame" x="81" y="250" width="212" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.27732234010000001" green="1" blue="0.21535998619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Upper Body"/>
+                                <connections>
+                                    <action selector="selector" destination="BYZ-38-t0r" eventType="touchUpInside" id="gOK-f5-NEg"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rj-w0-wJm">
-                                <rect key="frame" x="81" y="400" width="212" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.27732234010000001" green="1" blue="0.21535998619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Upper Body"/>
-                            </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nb7-vA-d19">
+                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="0.43795957063120833" green="0.91757631619013669" blue="0.98860508419689119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <rect key="contentStretch" x="0.45000000000000001" y="0.0" width="1" height="1"/>
@@ -107,6 +126,7 @@
                         <outlet property="button5" destination="6rj-w0-wJm" id="V0O-qE-RCr"/>
                         <outlet property="createWorkoutButton" destination="GHc-Xu-9us" id="1KW-hg-PRU"/>
                         <outlet property="enduranceButton" destination="mTP-cv-4r0" id="G5c-rx-5gN"/>
+                        <outlet property="selectorWheel" destination="Nb7-vA-d19" id="xAx-gh-OXa"/>
                         <outlet property="strengthButton" destination="DAp-XQ-YFK" id="sEq-L6-8XD"/>
                     </connections>
                 </viewController>

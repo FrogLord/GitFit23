@@ -25,6 +25,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var strengthButton: UIButton!
     @IBOutlet weak var enduranceButton: UIButton!
     
+    
+    @IBOutlet weak var selectorWheel: UIPickerView!
+    
     @IBAction func strengthCreate(_ sender: UIButton) {
         if sender.tag == 7 {
             endurance = false
@@ -49,6 +52,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
+    
+    @IBAction func selector() {
         
     }
 

@@ -11,14 +11,14 @@ import UIKit
 class SecondViewController: UIViewController {
 
     
-    
+    //workout labels
     @IBOutlet weak var workoutLabel1: UITextField!
     @IBOutlet weak var workoutLabel2: UITextField!
     @IBOutlet weak var workoutLabel3: UITextField!
     @IBOutlet weak var workoutLabel4: UITextField!
     @IBOutlet weak var workoutLabel5: UITextField!
     
-    
+    //rep labels
     @IBOutlet weak var repLabel1: UITextField!
     @IBOutlet weak var repLabel2: UITextField!
     @IBOutlet weak var repLabel3: UITextField!

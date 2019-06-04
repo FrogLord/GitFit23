@@ -42,16 +42,16 @@
                                 <color key="backgroundColor" red="0.27732234010000001" green="1" blue="0.21535998619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Upper Body"/>
                                 <connections>
-                                    <action selector="selector" destination="BYZ-38-t0r" eventType="touchUpInside" id="2zK-Sx-aL9"/>
+                                    <action selector="button1pressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="owI-tR-tSH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rj-w0-wJm">
                                 <rect key="frame" x="81" y="400" width="212" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.27732234010000001" green="1" blue="0.21535998619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Upper Body"/>
+                                <state key="normal" title="Cardio"/>
                                 <connections>
-                                    <action selector="selector" destination="BYZ-38-t0r" eventType="touchUpInside" id="odG-gO-vQa"/>
+                                    <action selector="button5pressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Gu-V3-mKH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAp-XQ-YFK">
@@ -59,18 +59,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.42789837660000002" blue="0.62862043460000006" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Strength"/>
-                                <connections>
-                                    <action selector="strengthCreate" destination="BYZ-38-t0r" eventType="touchUpInside" id="vxq-wI-51a"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTP-cv-4r0">
                                 <rect key="frame" x="209" y="543" width="150" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.2527753579" blue="0.31248088979999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Endurance"/>
-                                <connections>
-                                    <action selector="enduranceCreate" destination="BYZ-38-t0r" eventType="touchUpInside" id="HVJ-mx-OJj"/>
-                                </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHc-Xu-9us">
                                 <rect key="frame" x="96" y="480" width="182" height="40"/>
@@ -78,41 +72,36 @@
                                 <color key="backgroundColor" red="1" green="0.50317235189999998" blue="0.96907785749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Create Workout"/>
                                 <connections>
-                                    <action selector="createRecipe" destination="BYZ-38-t0r" eventType="touchUpInside" id="ETs-R6-paA"/>
                                     <segue destination="jPu-cb-hSU" kind="show" id="B24-3f-QtB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gm2-Kz-c9t">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gm2-Kz-c9t">
                                 <rect key="frame" x="81" y="350" width="212" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.27732234010000001" green="1" blue="0.21535998619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Upper Body"/>
+                                <state key="normal" title="Arms"/>
                                 <connections>
-                                    <action selector="selector" destination="BYZ-38-t0r" eventType="touchUpInside" id="8dC-Oe-w6G"/>
+                                    <action selector="button4pressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aYl-iu-Rtf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9O-H5-dVv">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9O-H5-dVv">
                                 <rect key="frame" x="81" y="300" width="212" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.27732234010000001" green="1" blue="0.21535998619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Upper Body"/>
+                                <state key="normal" title="Core"/>
                                 <connections>
-                                    <action selector="selector" destination="BYZ-38-t0r" eventType="touchUpInside" id="4jB-LL-WnS"/>
+                                    <action selector="button3pressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="plU-Hz-Uvq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6P-Sy-Fz0">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6P-Sy-Fz0">
                                 <rect key="frame" x="81" y="250" width="212" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.27732234010000001" green="1" blue="0.21535998619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Upper Body"/>
+                                <state key="normal" title="Legs"/>
                                 <connections>
-                                    <action selector="selector" destination="BYZ-38-t0r" eventType="touchUpInside" id="gOK-f5-NEg"/>
+                                    <action selector="button2pressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a4B-xT-zeN"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nb7-vA-d19">
-                                <rect key="frame" x="0.0" y="176" width="375" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="0.43795957063120833" green="0.91757631619013669" blue="0.98860508419689119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <rect key="contentStretch" x="0.45000000000000001" y="0.0" width="1" height="1"/>
@@ -126,7 +115,6 @@
                         <outlet property="button5" destination="6rj-w0-wJm" id="V0O-qE-RCr"/>
                         <outlet property="createWorkoutButton" destination="GHc-Xu-9us" id="1KW-hg-PRU"/>
                         <outlet property="enduranceButton" destination="mTP-cv-4r0" id="G5c-rx-5gN"/>
-                        <outlet property="selectorWheel" destination="Nb7-vA-d19" id="xAx-gh-OXa"/>
                         <outlet property="strengthButton" destination="DAp-XQ-YFK" id="sEq-L6-8XD"/>
                     </connections>
                 </viewController>

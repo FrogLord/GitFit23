@@ -18,6 +18,15 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var workoutLabel4: UITextField!
     @IBOutlet weak var workoutLabel5: UITextField!
     
+    
+    @IBOutlet weak var repLabel1: UITextField!
+    @IBOutlet weak var repLabel2: UITextField!
+    @IBOutlet weak var repLabel3: UITextField!
+    @IBOutlet weak var repLabel4: UITextField!
+    @IBOutlet weak var repLabel5: UITextField!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

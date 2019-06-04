@@ -28,7 +28,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var button4: UIButton!
     @IBOutlet weak var button5: UIButton!
     
+  
     
+    @IBAction func workout1() {
+        
+    }
     @IBOutlet weak var createWorkoutButton: UIButton!
     @IBOutlet weak var strengthButton: UIButton!
     @IBOutlet weak var enduranceButton: UIButton!

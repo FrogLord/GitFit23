@@ -40,18 +40,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var selectorWheel: UIPickerView!
     
-    @IBAction func strengthCreate(_ sender: UIButton) {
-        if sender.tag == 7 {
-            endurance = false
-            strength = true
-            average = false
-        }
-        else {
-            endurance = false
-            strength = false
-            average = true
-        }
-    }
     
     @IBAction func enduranceCreate() {
         

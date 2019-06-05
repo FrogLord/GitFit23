@@ -115,6 +115,8 @@ class ViewController: UIViewController {
             exerciseChooser3()
             exerciseChooser4()
             exerciseChooser5()
+            
+            performSegue(withIdentifier: "createWorkout", sender: UIButton())
         }
     }
     
@@ -155,6 +157,17 @@ class ViewController: UIViewController {
         }
     }
 
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "createWorkout" {
+            
+            let destinationVC = segue.destination as! SecondViewController
+            destinationVC.upperbodyEnabled = upperbody
+            destinationVC.legsEnabled = legs
+            destinationVC.coreEnabled = core
+            destinationVC.armsEnabled = arms
+            destinationVC.cardioEnabled = cardio
+            
+        }
+    }
 
 }

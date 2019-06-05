@@ -9,6 +9,12 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    var upperbodyEnabled : Bool
+    var legsEnabled : Bool
+    var coreEnabled : Bool
+    var armsEnabled : Bool
+    var cardioEnabled : Bool
 
     
     //workout labels
@@ -29,7 +35,12 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        workoutLabel1.text = ""
+        workoutLabel2.text = ""
+        workoutLabel3.text = ""
+        workoutLabel4.text = ""
+        workoutLabel5.text = ""
+        
         // Do any additional setup after loading the view.
     }
     /*

@@ -72,6 +72,7 @@
                                 <color key="backgroundColor" red="1" green="0.50317235189999998" blue="0.96907785749999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Create Workout"/>
                                 <connections>
+                                    <action selector="createWorkoutWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nyG-rf-8Ls"/>
                                     <segue destination="jPu-cb-hSU" kind="show" id="B24-3f-QtB"/>
                                 </connections>
                             </button>

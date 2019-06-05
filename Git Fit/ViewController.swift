@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var strength = false
     var endurance = false
     var average = true
+    
     var buttonDisable1 : Int = 0
     var buttonDisable2 : Int = 0
     var buttonDisable3 : Int = 0
@@ -99,8 +100,47 @@ class ViewController: UIViewController {
             buttonDisable5 = 0
         }
     }
+    
+    @IBAction func createWorkout(sender: UIButton) {
+        if sender.tag == 6 {
+            exerciseChooser1()
+            exerciseChooser2()
+            exerciseChooser3()
+            exerciseChooser4()
+            exerciseChooser5()
+        }
+    }
+    
+    func exerciseChooser1() {
+        if buttonDisable1 == 0 {
+            print("button 1 selected")
+        }
+    }
+    
+    func exerciseChooser2() {
+        if buttonDisable2 == 0 {
+            print("button 2 selected")
+        }
+    }
+        
+    func exerciseChooser3() {
+        if buttonDisable3 == 0 {
+            print("button 3 selected")
+        }
+    }
+            
+    func exerciseChooser4() {
+        if buttonDisable4 == 0 {
+            print("button 4 selected")
+        }
+    }
+                
+    func exerciseChooser5() {
+        if buttonDisable5 == 0 {
+            print("button 5 selected")
+        }
+    }
+
+
 
 }
-
-
-

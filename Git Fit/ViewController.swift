@@ -150,6 +150,7 @@ class ViewController: UIViewController {
         if buttonDisable5 == 0 {
             print("button 5 selected")
             cardio = true
+           
             
         }
     }

@@ -20,13 +20,20 @@ class ViewController: UIViewController {
     var buttonDisable4 : Int = 0
     var buttonDisable5 : Int = 0
     
+    var upperbody : Bool = false
+    var legs : Bool = false
+    var core : Bool = false
+    var arms : Bool = false
+    var cardio : Bool = false
+    
     var picker1 = ["Upper Body", "Legs", "Core", "Arms", "Cardio"]
     
-    var upperBody = ["shoulder press"]
-    var legs = ["squats"]
-    var core = ["plank"]
-    var arms = ["dumbell curls"]
-    var cardio = ["burpies"]
+    var upperBodyArray = ["shoulder press"]
+    var legsArray = ["squats"]
+    var coreArray = ["plank"]
+    var armsArray = ["dumbell curls"]
+    var cardioArray = ["burpies"]
+    
     //IBOutlets
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
@@ -114,30 +121,36 @@ class ViewController: UIViewController {
     func exerciseChooser1() {
         if buttonDisable1 == 0 {
             print("button 1 selected")
+            upperbody = true
         }
     }
     
     func exerciseChooser2() {
         if buttonDisable2 == 0 {
             print("button 2 selected")
+            legs = true
         }
     }
         
     func exerciseChooser3() {
         if buttonDisable3 == 0 {
             print("button 3 selected")
+            core = true
         }
     }
             
     func exerciseChooser4() {
         if buttonDisable4 == 0 {
             print("button 4 selected")
+            arms = true
         }
     }
                 
     func exerciseChooser5() {
         if buttonDisable5 == 0 {
             print("button 5 selected")
+            cardio = true
+            
         }
     }
 

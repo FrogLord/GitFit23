@@ -15,6 +15,30 @@ class SecondViewController: UIViewController {
     var coreEnabled : Bool = false
     var armsEnabled : Bool = false
     var cardioEnabled : Bool = false
+    
+    var pickedExercise1 : String = ""
+    var pickedExercise2 : String = ""
+    var pickedExercise3 : String = ""
+    var pickedExercise4 : String = ""
+    var pickedExercise5 : String = ""
+    
+    var upperBodyArray : Array = ["Shoulder Press", "Pushups", "Incline Dumbell Press", "Bench Press", "Deadlift", "Rows", "Weighted Shoulder Shurgs"]
+    var legsArray : Array = ["CowBell Squats", "Leg Press", "Seated Leg Curls", "Starjump Squats", "Seated Leg Extensions", "Calf Rasies", "Second Wall Sit" ]
+    var coreArray : Array = ["Plank", "Sit ups", "V-sits", "Crunches", "Leg Raises", "Plank Ups", "Russian Twist"]
+    var armsArray : Array = ["Dumbell Curls", "Tricep Dips", "Tricep Pulldowns", "Barbell Curls", "Hammer Curls", "Pull Ups", "Chin Up"]
+    var cardioArray : Array = ["Burpies", "Minute Run", "Minute Bike", "Jumping Jacks", "Minute Stairclimber", "Mountain Climbers", "Weighted Lunges"]
+    
+    var exercise1  = ""
+    var exercise2  = ""
+    var exercise3  = ""
+    var exercise4  = ""
+    var exercise5  = ""
+    
+    var repNumber1 : String = ""
+    var repNumber2 : String = ""
+    var repNumber3 : String = ""
+    var repNumber4 : String = ""
+    var repNumber5 : String = ""
 
     
     //workout labels
@@ -35,6 +59,7 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+         
         workoutLabel1.text = ""
         workoutLabel2.text = ""
         workoutLabel3.text = ""
@@ -47,6 +72,23 @@ class SecondViewController: UIViewController {
         repLabel4.text = ""
         repLabel5.text = ""
         
+        exerciseChecker1()
+        exerciseChecker2()
+        exerciseChecker3()
+        exerciseChecker4()
+        exerciseChecker5()
+        
+       
+       
+        
+        
+       
+        
+     
+        
+       
+    
+        
         // Do any additional setup after loading the view.
     }
     /*
@@ -58,5 +100,49 @@ class SecondViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    func exerciseChecker1() {
+        if upperbodyEnabled == true {
+            exercise1 = upperBodyArray.randomElement()!
+            workoutLabel1.text = exercise1
+            repNumber1 = String(Int.random(in: 6...12))
+            repLabel1.text = repNumber1
+        }
+    }
+    
+    func exerciseChecker2() {
+        if legsEnabled == true {
+            exercise2 = legsArray.randomElement()!
+            workoutLabel2.text = exercise2
+            repNumber2 = String(Int.random(in: 6...12))
+            repLabel2.text = repNumber2
+        }
+    }
+    
+    func exerciseChecker3() {
+        if coreEnabled == true {
+            exercise3 = coreArray.randomElement()!
+            workoutLabel3.text = exercise3
+            repNumber3 = String(Int.random(in: 6...12))
+            repLabel3.text = repNumber3
+        }
+    }
+    
+    func exerciseChecker4() {
+        if armsEnabled == true {
+            exercise4 = armsArray.randomElement()!
+            workoutLabel4.text = exercise4
+            repNumber4 = String(Int.random(in: 6...12))
+            repLabel4.text = repNumber4
+        }
+    }
+    
+    func exerciseChecker5() {
+        if cardioEnabled == true {
+            exercise5 = cardioArray.randomElement()!
+            workoutLabel5.text = exercise5
+            repNumber5 = String(Int.random(in: 6...12))
+            repLabel5.text = repNumber5
+        }
+    }
 
 }

@@ -54,18 +54,6 @@
                                     <action selector="button5pressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Gu-V3-mKH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAp-XQ-YFK">
-                                <rect key="frame" x="16" y="543" width="150" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.42789837660000002" blue="0.62862043460000006" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Strength"/>
-                            </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTP-cv-4r0">
-                                <rect key="frame" x="209" y="543" width="150" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.2527753579" blue="0.31248088979999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Endurance"/>
-                            </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHc-Xu-9us">
                                 <rect key="frame" x="96" y="480" width="182" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -103,6 +91,13 @@
                                     <action selector="button2pressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a4B-xT-zeN"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Green indicates an active area for your workout. Red indicates a disabled area for your workout." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Rq0-Rd-z1Q">
+                                <rect key="frame" x="55" y="535" width="264" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.43795957063120833" green="0.91757631619013669" blue="0.98860508419689119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <rect key="contentStretch" x="0.45000000000000001" y="0.0" width="1" height="1"/>
@@ -115,8 +110,6 @@
                         <outlet property="button4" destination="gm2-Kz-c9t" id="mYT-4D-LuX"/>
                         <outlet property="button5" destination="6rj-w0-wJm" id="V0O-qE-RCr"/>
                         <outlet property="createWorkoutButton" destination="GHc-Xu-9us" id="1KW-hg-PRU"/>
-                        <outlet property="enduranceButton" destination="mTP-cv-4r0" id="G5c-rx-5gN"/>
-                        <outlet property="strengthButton" destination="DAp-XQ-YFK" id="sEq-L6-8XD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -229,6 +222,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Please be cautious and use a resonsible amount of weight for weighted exercises." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IoM-Vc-FCP">
+                                <rect key="frame" x="67" y="440" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.084807833692758461" green="1" blue="0.3850688543944919" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="B29-Ej-nWS"/>

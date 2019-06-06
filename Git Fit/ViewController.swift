@@ -26,13 +26,14 @@ class ViewController: UIViewController {
     var arms : Bool = false
     var cardio : Bool = false
     
-    var picker1 = ["Upper Body", "Legs", "Core", "Arms", "Cardio"]
+    var upperBodyArray : Array = ["Shoulder Press", "Pushups", "Incline Dumbell Press", "Bench Press", "Deadlift", "Rows", "Weighted Shoulder Shurgs"]
+    var legsArray : Array = ["CowBell Squats", "Leg Press", "Seated Leg Curls", "Starjump Squats", "Seated Leg Extensions", "Calf Rasies", "Second Wall Sit" ]
+    var coreArray : Array = ["Plank", "Sit ups", "V-sits", "Crunches", "Leg Raises", "Plank Ups", "Russian Twist"]
+    var armsArray : Array = ["Dumbell Curls", "Tricep Dips", "Tricep Pulldowns", "Barbell Curls", "Hammer Curls", "Pull Ups", "Chin Up"]
+    var cardioArray : Array = ["Burpies", "Minute Run", "Minute Bike", "Jumping Jacks", "Minute Stairclimber", "Mountain Climbers", "Weighted Lunges"]
     
-    var upperBodyArray = ["shoulder press"]
-    var legsArray = ["squats"]
-    var coreArray = ["plank"]
-    var armsArray = ["dumbell curls"]
-    var cardioArray = ["burpies"]
+    
+    
     
     //IBOutlets
     @IBOutlet weak var button1: UIButton!
@@ -47,8 +48,8 @@ class ViewController: UIViewController {
         
     
     @IBOutlet weak var createWorkoutButton: UIButton!
-    @IBOutlet weak var strengthButton: UIButton!
-    @IBOutlet weak var enduranceButton: UIButton!
+
+
     
     
     override func viewDidLoad() {
@@ -58,7 +59,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func button1pressed(sender: UIButton) {
-        if sender.tag == 1 && buttonDisable1 == 0 {
+    if sender.tag == 1 && buttonDisable1 == 0 {
         button1.backgroundColor = UIColor.red
             buttonDisable1 = 1
         } else if sender.tag == 1 && buttonDisable1 == 1 {
@@ -116,41 +117,38 @@ class ViewController: UIViewController {
             exerciseChooser4()
             exerciseChooser5()
             
+         
+            
             performSegue(withIdentifier: "createWorkout", sender: UIButton())
         }
     }
     
     func exerciseChooser1() {
         if buttonDisable1 == 0 {
-            print("button 1 selected")
             upperbody = true
         }
     }
     
     func exerciseChooser2() {
         if buttonDisable2 == 0 {
-            print("button 2 selected")
             legs = true
         }
     }
         
     func exerciseChooser3() {
         if buttonDisable3 == 0 {
-            print("button 3 selected")
             core = true
         }
     }
             
     func exerciseChooser4() {
         if buttonDisable4 == 0 {
-            print("button 4 selected")
             arms = true
         }
     }
                 
     func exerciseChooser5() {
         if buttonDisable5 == 0 {
-            print("button 5 selected")
             cardio = true
            
             
@@ -166,6 +164,8 @@ class ViewController: UIViewController {
             destinationVC.coreEnabled = core
             destinationVC.armsEnabled = arms
             destinationVC.cardioEnabled = cardio
+            
+            
             
         }
     }

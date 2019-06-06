@@ -10,11 +10,11 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
-    var upperbodyEnabled : Bool
-    var legsEnabled : Bool
-    var coreEnabled : Bool
-    var armsEnabled : Bool
-    var cardioEnabled : Bool
+    var upperbodyEnabled : Bool = false
+    var legsEnabled : Bool = false
+    var coreEnabled : Bool = false
+    var armsEnabled : Bool = false
+    var cardioEnabled : Bool = false
 
     
     //workout labels
@@ -40,6 +40,12 @@ class SecondViewController: UIViewController {
         workoutLabel3.text = ""
         workoutLabel4.text = ""
         workoutLabel5.text = ""
+        
+        repLabel1.text = ""
+        repLabel2.text = ""
+        repLabel3.text = ""
+        repLabel4.text = ""
+        repLabel5.text = ""
         
         // Do any additional setup after loading the view.
     }

@@ -73,7 +73,7 @@
                                 <state key="normal" title="Create Workout"/>
                                 <connections>
                                     <action selector="createWorkoutWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nyG-rf-8Ls"/>
-                                    <segue destination="jPu-cb-hSU" kind="show" id="B24-3f-QtB"/>
+                                    <segue destination="jPu-cb-hSU" kind="show" identifier="createWorkout" id="B24-3f-QtB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gm2-Kz-c9t">

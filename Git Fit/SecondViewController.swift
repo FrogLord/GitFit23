@@ -60,18 +60,6 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
          
-        workoutLabel1.text = ""
-        workoutLabel2.text = ""
-        workoutLabel3.text = ""
-        workoutLabel4.text = ""
-        workoutLabel5.text = ""
-        
-        repLabel1.text = ""
-        repLabel2.text = ""
-        repLabel3.text = ""
-        repLabel4.text = ""
-        repLabel5.text = ""
-        
         exerciseChecker1()
         exerciseChecker2()
         exerciseChecker3()

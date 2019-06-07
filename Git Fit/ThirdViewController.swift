@@ -13,6 +13,24 @@ class ThirdViewController: UIViewController {
     var stopWatchTimer = Timer()
     var currentTime = 0
     
+    var exerciseHolder1 : String = ""
+    var exerciseHolder2 : String = ""
+    var exerciseHolder3 : String = ""
+    var exerciseHolder4 : String = ""
+    var exerciseHolder5 : String = ""
+    
+    var repHolder1 : String = ""
+    var repHolder2 : String = ""
+    var repHolder3 : String = ""
+    var repHolder4 : String = ""
+    var repHolder5 : String = ""
+    
+    var enable1 : Bool = false
+    var enable2 : Bool = false
+    var enable3 : Bool = false
+    var enable4 : Bool = false
+    var enable5 : Bool = false
+    
     
     //IBOutlets
     
@@ -63,7 +81,12 @@ class ThirdViewController: UIViewController {
             print("Time Failed")
         }
     }
-    
+    @IBAction func backButtonPressed(sender: UIButton) {
+        if sender.tag == 9 {
+            performSegue(withIdentifier: "backFromTimer", sender: UIButton())
+            
+        }
+    }
     
     
     
@@ -73,7 +96,44 @@ class ThirdViewController: UIViewController {
         pauseButton.isHidden = true
         stopButton.isEnabled = false
         
+        
+        
         // Do any additional setup after loading the view.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "backFromTimer" {
+            
+            let destinationVC = segue.destination as! SecondViewController
+            destinationVC.exercise1 = exerciseHolder1
+            destinationVC.exercise2 = exerciseHolder2
+            destinationVC.exercise3 = exerciseHolder3
+            destinationVC.exercise4 = exerciseHolder4
+            destinationVC.exercise5 = exerciseHolder5
+            
+            destinationVC.repNumber1 = repHolder1
+            destinationVC.repNumber2 = repHolder2
+            destinationVC.repNumber3 = repHolder3
+            destinationVC.repNumber4 = repHolder4
+            destinationVC.repNumber5 = repHolder5
+            
+           
+            enable1 = true
+            enable2 = true
+            enable3 = true
+            enable4 = true
+            enable5 = true
+            
+            destinationVC.VC2enable1 = enable1
+            destinationVC.VC2enable2 = enable2
+            destinationVC.VC2enable3 = enable3
+            destinationVC.VC2enable4 = enable4
+            destinationVC.VC2enable5 = enable5
+            
+            
+            
+            
+        }
     }
     
 

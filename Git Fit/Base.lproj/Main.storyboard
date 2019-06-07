@@ -140,7 +140,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Timer &gt;"/>
                                 <connections>
-                                    <segue destination="jkF-gk-aRN" kind="show" id="BAp-T9-2kw"/>
+                                    <action selector="timerPressed" destination="jPu-cb-hSU" eventType="touchUpInside" id="YPY-un-8mY"/>
+                                    <segue destination="jkF-gk-aRN" kind="show" identifier="timer" id="BAp-T9-2kw"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Workout Here" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="enX-RU-gcD">
@@ -236,6 +237,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
+                                    <action selector="backPressed" destination="jPu-cb-hSU" eventType="touchUpInside" id="ITX-LN-AUu"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="FSR-xU-lCp"/>
                                 </connections>
                             </button>
@@ -300,13 +302,14 @@
                                     <action selector="stopButtonPressed:" destination="jkF-gk-aRN" eventType="touchUpInside" id="Rst-86-shw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lko-A4-l07">
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lko-A4-l07">
                                 <rect key="frame" x="-15" y="8" width="102" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="jPu-cb-hSU" kind="show" id="Tg8-gg-Bgc"/>
+                                    <action selector="backButtonPressedWithSender:" destination="jkF-gk-aRN" eventType="touchUpInside" id="czY-yc-oTd"/>
+                                    <segue destination="jPu-cb-hSU" kind="show" identifier="backFromTimer" id="Tg8-gg-Bgc"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=":" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p1J-cp-X5N">

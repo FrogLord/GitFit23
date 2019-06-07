@@ -28,17 +28,25 @@ class SecondViewController: UIViewController {
     var armsArray : Array = ["Dumbell Curls", "Tricep Dips", "Tricep Pulldowns", "Barbell Curls", "Hammer Curls", "Pull Ups", "Chin Up"]
     var cardioArray : Array = ["Burpies", "Minute Run", "Minute Bike", "Jumping Jacks", "Minute Stairclimber", "Mountain Climbers", "Weighted Lunges"]
     
-    var exercise1  = ""
-    var exercise2  = ""
-    var exercise3  = ""
-    var exercise4  = ""
-    var exercise5  = ""
+    var exercise1  : String = ""
+    var exercise2  : String = ""
+    var exercise3  : String = ""
+    var exercise4  : String = ""
+    var exercise5  : String = ""
     
     var repNumber1 : String = ""
     var repNumber2 : String = ""
     var repNumber3 : String = ""
     var repNumber4 : String = ""
     var repNumber5 : String = ""
+    
+    var VC2enable1 : Bool = false
+    var VC2enable2 : Bool = false
+    var VC2enable3 : Bool = false
+    var VC2enable4 : Bool = false
+    var VC2enable5 : Bool = false
+    
+    var index : Int = 1
 
     
     //workout labels
@@ -59,12 +67,22 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         
+        
+        performSegue(withIdentifier: "timer", sender: UIButton())
+        if index == 1 {
         exerciseChecker1()
         exerciseChecker2()
         exerciseChecker3()
         exerciseChecker4()
         exerciseChecker5()
+        
+        }
+        
+        timerTransition1()
+        timerTransition2()
+        timerTransition3()
+        timerTransition4()
+        timerTransition5()
         
        
        
@@ -132,5 +150,80 @@ class SecondViewController: UIViewController {
             repLabel5.text = repNumber5
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "timer" {
+            
+            let destinationVC = segue.destination as! ThirdViewController
+            destinationVC.exerciseHolder1 = exercise1
+            destinationVC.exerciseHolder2 = exercise2
+            destinationVC.exerciseHolder3 = exercise3
+            destinationVC.exerciseHolder4 = exercise4
+            destinationVC.exerciseHolder5 = exercise5
+            
+            destinationVC.repHolder1 = repNumber1
+            destinationVC.repHolder2 = repNumber2
+            destinationVC.repHolder3 = repNumber3
+            destinationVC.repHolder4 = repNumber4
+            destinationVC.repHolder5 = repNumber5
+            
+            
+            
+            
+            
+        }
+    }
+    
+    func timerTransition1() {
+        if VC2enable1 == true {
+            
+            workoutLabel1.text = exercise1
+           
+            repLabel1.text = repNumber1
+        }
+    }
 
+    func timerTransition2() {
+        if VC2enable2 == true {
+            
+            workoutLabel2.text = exercise2
+           
+            repLabel2.text = repNumber2
+        }
+    }
+    
+    func timerTransition3() {
+        if VC2enable3 == true {
+            
+            workoutLabel3.text = exercise3
+            
+            repLabel3.text = repNumber3
+        }
+    }
+    
+    func timerTransition4() {
+        if VC2enable4 == true {
+            
+            workoutLabel4.text = exercise4
+            
+            repLabel4.text = repNumber4
+        }
+    }
+    
+    func timerTransition5() {
+        if VC2enable5 == true {
+           
+            workoutLabel5.text = exercise5
+          
+            repLabel5.text = repNumber5
+        }
+    }
+    
+    @IBAction func timerPressed() {
+        index = 1
+    }
+    
+    @IBAction func backPressed() {
+        index = 0
+    }
 }

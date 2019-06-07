@@ -5,7 +5,7 @@
 //  Created by Kurt Galicha on 2019-06-04.
 //  Copyright © 2019 The Computer bouz. All rights reserved.
 //
-
+//This is the StopWatch part of the project
 import UIKit
 
 class ThirdViewController: UIViewController {

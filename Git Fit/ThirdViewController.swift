@@ -48,24 +48,29 @@ class ThirdViewController: UIViewController {
         
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ThirdViewController.updateTime), userInfo: nil, repeats: true)
     }
-    @IBAction func stopButtonPressed(_ sender: Any) {
+    @IBAction func stopButtonPressed(_ sender: UIButton) {
+        if sender.tag == 25 {
         stopWatchTimer.invalidate()
         
-        startButton.isHidden = false
+        startButton.isHidden = true
         pauseButton.isHidden = true
-        stopButton.isEnabled = false
+        stopButton.isEnabled = true
         
         currentTime = 0
         
         secondLabel.text = "0"
         minuteLabel.text = "0"
-        
+        }
+        else {
+            print("Time Failed Again Bro")
+        }
     }
     @IBAction func pauseButtonPressed(_ sender: Any) {
         stopWatchTimer.invalidate()
         
         startButton.isHidden = false
         pauseButton.isHidden = true
+        
         
     }
     @objc func updateTime() {

@@ -96,7 +96,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Green indicates an active area for your workout. Red indicates a disabled area for your workout." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Rq0-Rd-z1Q">
                                 <rect key="frame" x="55" y="535" width="264" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.88106757609999997" green="0.86209228739999999" blue="0.16107570509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -358,7 +358,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="BAp-T9-2kw"/>
-        <segue reference="Tg8-gg-Bgc"/>
+        <segue reference="B24-3f-QtB"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -43,7 +43,7 @@ class ThirdViewController: UIViewController {
     //IBActions
     @IBAction func startButtonPressed(_ sender: Any) {
         startButton.isHidden = true
-        pauseButton.isHidden = false
+        pauseButton.isHidden = true
         stopButton.isEnabled = true
         
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ThirdViewController.updateTime), userInfo: nil, repeats: true)

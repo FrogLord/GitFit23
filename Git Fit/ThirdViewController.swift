@@ -10,21 +10,25 @@ import UIKit
 
 class ThirdViewController: UIViewController {
     
+    
     var stopWatchTimer = Timer()
     var currentTime = 0
     
+    //these are used to pass the current workout from VC 2 to VC 3 and back
     var exerciseHolder1 : String = ""
     var exerciseHolder2 : String = ""
     var exerciseHolder3 : String = ""
     var exerciseHolder4 : String = ""
     var exerciseHolder5 : String = ""
     
+    ////these are used to pass the current amount of reps from VC 2 to VC 3 and abck
     var repHolder1 : String = ""
     var repHolder2 : String = ""
     var repHolder3 : String = ""
     var repHolder4 : String = ""
     var repHolder5 : String = ""
     
+    //these are used to pass which exercises are enabled and disabled
     var enable1 : Bool = false
     var enable2 : Bool = false
     var enable3 : Bool = false
@@ -104,6 +108,7 @@ class ThirdViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "backFromTimer" {
             
+            //this segue passes the workout back to VC 2 to be displayed instead of creating a new random one
             let destinationVC = segue.destination as! SecondViewController
             destinationVC.exercise1 = exerciseHolder1
             destinationVC.exercise2 = exerciseHolder2
@@ -135,16 +140,4 @@ class ThirdViewController: UIViewController {
             
         }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -52,6 +52,9 @@ class ThirdViewController: UIViewController {
         
         Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ThirdViewController.updateTime), userInfo: nil, repeats: true)
     }
+    
+    //This is the basic stopwatch function, going 1 interval each
+    
     @IBAction func stopButtonPressed(_ sender: UIButton) {
         stopWatchTimer.invalidate()
         
@@ -64,6 +67,9 @@ class ThirdViewController: UIViewController {
         secondLabel.text = "0"
         minuteLabel.text = "0"
     }
+    
+    //This function is used to restart the clock to 0
+    
     @IBAction func pauseButtonPressed(_ sender: Any) {
         stopWatchTimer.invalidate()
         
@@ -85,6 +91,10 @@ class ThirdViewController: UIViewController {
             print("Time Failed")
         }
     }
+    
+    //This function updates the time by one Interval everytime
+    
+    //Segue to back it up to the previous ViewController
     @IBAction func backButtonPressed(sender: UIButton) {
         if sender.tag == 9 {
             performSegue(withIdentifier: "backFromTimer", sender: UIButton())
